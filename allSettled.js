@@ -1,4 +1,4 @@
-const fs = require('fs');
+  const fs = require('fs');
 const util = require('util');
 
 //old
@@ -15,7 +15,7 @@ fs.readFile('data1.txt', (err,data1) =>{
 
 //new
 var read = util.promisify(fs.readFile);
-//parallel
+//parallel, wait for all promises
 Promise.allSettled([
 	
 	read('data1.txt'),
