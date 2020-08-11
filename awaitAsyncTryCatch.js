@@ -12,6 +12,7 @@ var run = async() => {
 		const data = await read('data4.txt');
 		console.log(data.toString());
 	}catch(e){
+	  // if the promise read returns a reject then we go inside the catch
 		console.log(e);
 	}
 	
