@@ -14,11 +14,12 @@ new Promise
 				if(err){
 					reject(err);
 				}else{
+				  // if there is no problem with the file then the promise returns resolve
 					resolve(data);
 				}
 		});
 
-	})
+	})// go inside then if promise return resolve
 	.then(data =>{
 		console.log(data.toString());
 	})

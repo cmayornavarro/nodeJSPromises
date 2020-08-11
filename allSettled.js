@@ -19,7 +19,7 @@ var read = util.promisify(fs.readFile);
 Promise.allSettled([
 	
 	read('data1.txt'),
-	read('data5.txt'),
+	read('data5.txt'),  
 	read('data3.txt')
 
 	])
